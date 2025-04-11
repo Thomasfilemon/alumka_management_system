@@ -1,4 +1,4 @@
-# 🧱 ALUSTORE POS APP — THE CRACKHEAD DEVELOPER'S STARTER GUIDE
+# 🧱 ALUMKA MANAGEMENT SYSTEM APP — THE CRACKHEAD DEVELOPER'S STARTER GUIDE
 
 Welcome to this absolute unit of an Electron app for managing your local toko aluminium empire. No MySQL spaghetti, just one file-based chad: **SQLite**. We're using **Electron + Vite + Vanilla JS**, powered by the GOAT: `better-sqlite3`. Let’s get this baby running, starting from nothing to something that makes your client moan in joy.
 
