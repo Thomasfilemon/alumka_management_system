@@ -2,12 +2,24 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World!</title>
-
+    <title>Alumka Management System</title>
   </head>
   <body>
     <h1>💖 Hello World!</h1>
     <p>Welcome to your Electron application.</p>
+    <h1 id="status">Loading ...</h1>
+    <script type="module">
+      const statusEl = document.getElementById("status");
+      window.electronAPI.getDBStatus().then((isConnected) => {
+        if (isConnected) {
+          statusEl.textContent = "CONNECTION SUCCESS";
+          statusEl.style.color = "green";
+        } else {
+          statusEl.textContent = "L connection, ts pmo sybau";
+          statusEl.style.color = "red";
+        }
+      });
+    </script>
     <script type="module" src="/src/renderer.js"></script>
   </body>
 </html>
